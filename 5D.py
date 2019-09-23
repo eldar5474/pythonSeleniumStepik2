@@ -11,8 +11,7 @@ try:
     sunduk = browser.find_element_by_id("treasure")
     valuex = sunduk.get_attribute("valuex")
     browser.find_element_by_id("answer").send_keys(calc(valuex))
-    browser.find_element_by_id("robotCheckbox").click()
-    browser.find_element_by_id("robotsRule").click()
+
     browser.find_element_by_css_selector(".btn.btn-default").click()
 finally:
     time.sleep(30)
